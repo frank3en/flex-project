@@ -36,6 +36,19 @@ body {
   /* it will be removed, when its container gets larger OR -> set min-height */
   min-height: 100vh; }
 
+/***************************************
+ *                LOGO                 *
+ * IT IS A TRY OUT FOR THE COMMENT BOX *
+ ***************************************/
+.logo {
+  height: 3.25rem; }
+
+/**********
+ * SEARCH *
+ **********/
+/************
+ * USER-NAV *
+ ************/
 .container {
   max-width: 120rem;
   margin: 0 auto;
