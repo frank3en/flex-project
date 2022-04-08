@@ -11,6 +11,8 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba($color: #000000, $alpha: 0.3);
 }
 
 * {
@@ -41,6 +43,7 @@ body {
   );
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 8rem 0; // fix the scroll bar problem.
 
   /* it will be removed, when its container gets larger OR -> set min-height */
   //   height: 100vh;

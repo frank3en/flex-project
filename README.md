@@ -10,7 +10,7 @@ A flex box project
 
 ### Settings & Custom Properties
 
-1. `@import` keyword works in sass. Partial is connected to `\_\w+.s[ac]ss`
+1. How the `@import` keyword works in sass. Partial is connected to `\_\w+.s[ac]ss`
 2. How to correctly use `min-height` property.
 3. How to set all element to `box-sizing:border-box`.
 4. How to define & use some **pure CSS supported** custom variables.

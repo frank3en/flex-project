@@ -1,0 +1,25 @@
+// He seperate the files, but why?
+// May be more readable
+.container {
+  max-width: 120rem; // So the element can decrease.
+  margin: 0 auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; // can increase.
+}
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+.content {
+  display: flex;
+}
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%; // what does percentage relate to
+}
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
+}
