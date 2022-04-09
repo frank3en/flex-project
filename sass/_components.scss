@@ -10,10 +10,40 @@
  * SEARCH *
  **********/
 .search {
+  &__input {
+  }
+  &__button {
+  }
+  &__icon {
+    // format a svg icon
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 /************
  * USER-NAV *
  ************/
 .user-nav {
+  &__icon-box {
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &__notification {
+  }
+
+  &__user {
+  }
+  // he separate nested element again
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+  }
+  &__user-name {
+
+  }
 }

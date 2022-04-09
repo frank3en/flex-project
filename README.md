@@ -26,8 +26,16 @@ A flex box project
 4. Setting the `max-width` propery, which let the element grow not too large, which allows the min length. In the same way, the `min-{height,width}` is to avoid too small and go through with the large number.
 5. The property of `flex:grow shrink basis`, and default to `flex:0 1 auto`.
 
-### Header Part
+### Header Part1.
 
+1. Using `svg-sprites.svg` as a collection of svg icons. How to generate and how to use it. Use the hash tag to position certain icon in ther sprites file.
+2. The `xlink:href` attribute in `<use />` within `<svg>` only works in a server environment.
+3. SVG resource website: [https://icomoon.io/](https://icomoon.io/)
+4. The `bem` block, element, modifier css layout naming methodology.
+5. How to format a svg? Setting `height` and `width` attributes.
+6. A VSCode extension called **Comment Box**, for make box comment using in `_components.scss`. 
+
+### Header Part2.
 
 
 ## My customed own project associated with atelier
