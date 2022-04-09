@@ -56,6 +56,7 @@ A flex box project
 3. Direct children element selector `>`.
 4. Setting `svg` element's color: `fill:{some rbag/}`,
 5. Why setting `border-raidus` a very high value? differ from `50%`.
+6. Why only set the height of the `<img />` element, is it because of the origin size is square or the stardard force the height and width to be equal, or is for the `border-raidus` let it be a square-like.
 
 ## Component List
 
