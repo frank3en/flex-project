@@ -8,6 +8,7 @@ A flex box project
 
 - [x] Project Settings & Custom Properties
 - [x] Overall Layout
+- [ ] Header
 
 ### Settings & Custom Properties
 
@@ -37,5 +38,14 @@ A flex box project
 
 ### Header Part2.
 
+1. A diff I find is the size of **search icon** is not the same as with mentor's, and it is weird. The `svg` element is no different, it is because of the wrapper element which in this case is the `button` element. Some reasons I found: 1.`button` element has its own **user agent stylesheet**, it doesn't get style inheritance; 2. `line-heigth` and `font-size` has influence to the height of `button` element; 3.`align-items` default `stretch` will strech the button; And there must be other reason...
+2. The usage of adjacent selector `+`, when `a's` sibling elements has something pseudo event, a wants certain corresponding style.
+3. Pseudo event of button `:focus` and `:active`.
+4. Minus margin and padding for icon placed in input: `margin-right: -num`, `padding-right:num`;
+5. `input` and `button` can't get inherit `font-size`, `color`, `font-family` and other attributes, need to manually set it;
+6. Pseudo event `:focus` has a `outline`, which needs to be set to `none`;
+7. Use `fill:color` to set an `<svg>` element;
+8. `justify-content: space-between` and set middle element `flex:0 0 40%` means it no grow no shrink and it has 40% of all width, the width can be used in its children elements as 100% of width.
+9. Set `font-size` in `_layout.scss` for inner components to inherit.
 
 ## My customed own project associated with atelier

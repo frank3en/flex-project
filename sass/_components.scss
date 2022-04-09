@@ -4,20 +4,67 @@
  ***************************************/
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 /**********
  * SEARCH *
  **********/
 .search {
+  flex: 0 0 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &__input {
+    // the font famliy,font-size, color of input doesn't inherit
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 0.7rem 4rem 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.5rem; // it's for the button element
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--color-grey-light-3);
+    }
+  }
+
+  // adjacent selector : "+" for sibling elements.
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
   }
   &__button {
+    border: none;
+    font-size: 1rem;
+    line-height: 1;
+
+    background-color: var(--color-grey-light-2);
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
   &__icon {
     // format a svg icon
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
@@ -25,6 +72,7 @@
  * USER-NAV *
  ************/
 .user-nav {
+  background-color: rebeccapurple;
   &__icon-box {
   }
 
@@ -44,6 +92,5 @@
     border-radius: 50%;
   }
   &__user-name {
-
   }
 }

@@ -8,9 +8,14 @@
   min-height: 50rem; // can increase.
 }
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: 1px solid var(--color-grey-light-2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content {
   display: flex;
