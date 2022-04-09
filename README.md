@@ -8,7 +8,8 @@ A flex box project
 
 - [x] Project Settings & Custom Properties
 - [x] Overall Layout
-- [ ] Header
+- [x] Header
+- [x] Navigation
 
 ### Settings & Custom Properties
 
@@ -34,7 +35,7 @@ A flex box project
 3. SVG resource website: [https://icomoon.io/](https://icomoon.io/)
 4. The `bem` block, element, modifier css layout naming methodology.
 5. How to format a svg? Setting `height` and `width` attributes.
-6. A VSCode extension called **Comment Box**, for make box comment using in `_components.scss`. 
+6. A VSCode extension called **Comment Box**, for make box comment using in `_components.scss`.
 
 ### Header Part2.
 
@@ -47,5 +48,19 @@ A flex box project
 7. Use `fill:color` to set an `<svg>` element;
 8. `justify-content: space-between` and set middle element `flex:0 0 40%` means it no grow no shrink and it has 40% of all width, the width can be used in its children elements as 100% of width.
 9. Set `font-size` in `_layout.scss` for inner components to inherit.
+
+### Header Part3
+
+1. For layout symmetric we need to modify some early settings: `logo margin-left`.
+2. `align-self:stretch` to let the certain element occupy the whole row size of flex cross axis, which is very helpful for the **pseudo event** like `:hover`,...
+3. Direct children element selector `>`.
+4. Setting `svg` element's color: `fill:{some rbag/}`,
+5. Why setting `border-raidus` a very high value? differ from `50%`.
+
+## Component List
+
+- [ ] header-nav-content layout
+- [x] Input search
+- [x] Notification with number
 
 ## My customed own project associated with atelier
