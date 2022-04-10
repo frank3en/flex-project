@@ -71,7 +71,8 @@ A flex box project
 7. The common case for `<a />` style, `:link`,`:visited`,and attribute is `text-decoration`.
 8. The common case for `<ul />` style: `list-style`.
 9. `z-index` only works when the element is assigned a specific position.
-10. The `:active` pseudo event. When does it triggered and can it put on any element?
+10. The `:active` pseudo event. When does it triggered and can it put on any element? Often triggered when mouse left click.
+> To style links appropriately, put the :active rule after all other link-related rules, as defined by the LVHA-order: :link — :visited — :hover — :active.
 11. **`currentColor`** is useful. gives the element color of its own or of its parent.
 
 ## Component List
