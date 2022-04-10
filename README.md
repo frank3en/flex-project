@@ -10,6 +10,7 @@ A flex box project
 - [x] Overall Layout
 - [x] Header
 - [x] Navigation
+- [ ] Overview
 
 ### Settings & Custom Properties
 
@@ -58,10 +59,27 @@ A flex box project
 5. Why setting `border-raidus` a very high value? differ from `50%`.
 6. Why only set the height of the `<img />` element, is it because of the origin size is square or the stardard force the height and width to be equal, or is for the `border-raidus` let it be a square-like.
 
+### Nav Part
+
+
+1. The cubic bezier function website [https://cubic-bezier.com](https://cubic-bezier.com/)
+2. The navigation item often used with the `<ul>` and `<li>` item within `<nav />`, and the link it's a `<a />`.
+3. The order of pseudo element and pseudo event. `.class:hover::before` means diff with `.class::before:hover`.
+4. Multipule transition effects separate with `,`, and the Their sequence is the same with the start sequence.
+5. Use `transform:scaleY()/scaleX()` not width, why? It's easy to set the animation origin.
+6. There is a deley for different transition effect.
+7. The common case for `<a />` style, `:link`,`:visited`,and attribute is `text-decoration`.
+8. The common case for `<ul />` style: `list-style`.
+9. `z-index` only works when the element is assigned a specific position.
+10. The `:active` pseudo event. When does it triggered and can it put on any element?
+11. **`currentColor`** is useful. gives the element color of its own or of its parent.
+
 ## Component List
 
-- [ ] header-nav-content layout
+- [ ] Header-nav-content layout
 - [x] Input search
 - [x] Notification with number
+- [x] Side navigation layout
+- [x] Side navigation item with animation
 
 ## My customed own project associated with atelier

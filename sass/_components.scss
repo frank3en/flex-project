@@ -1,7 +1,6 @@
-/***************************************
- *                LOGO                 *
- * IT IS A TRY OUT FOR THE COMMENT BOX *
- ***************************************/
+/***************
+ * HEADER LOGO *
+ ***************/
 .logo {
   height: 3.25rem;
   margin-left: 2rem; // change it for layout symmetric: user-nav__user part
@@ -68,9 +67,9 @@
   }
 }
 
-/************
- * USER-NAV *
- ************/
+/*******************
+ * USER NAVIGATION *
+ *******************/
 .user-nav {
   align-self: stretch;
 
@@ -122,4 +121,79 @@
     border-radius: 50%;
     margin-right: 1rem;
   }
+}
+
+/*******************
+ * SIDE NAVIGATION *
+ *******************/
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none; // ul dot
+  margin-top: 3.5rem;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  /* for the hover effect */
+  &__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 3px;
+    height: 100%;
+    background: var(--color-primary);
+    transform: scaleY(0); // The Y direction is from top to bottom
+    transition: transform 0.2s,
+      width 0.4s cubic-bezier(0.91, -0.02, 1, 0.55) 0.2s, background-color 0.1s; // multiple transtion
+  }
+
+  // the way he thinks to let active one do the same as hover state
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%; // it needs a delay
+  }
+
+  &__item:active::before {
+    background-color: var(--color-primary-light);
+  }
+
+  /* handle the common case for alink */
+  &__link:link,
+  &__link:visited {
+    color: var(--color-grey-light-1);
+    // for underline
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    //@IMTPORTANT: zIndex only works when we have specified postion
+    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 2rem;
+    fill: currentColor; // color of its element here or its parent's
+  }
+}
+
+/*********
+ * LEGAL *
+ *********/
+.legal {
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: var(--color-grey-light-4);
+  text-align: center; // horizontal direction alignment vs. vertical align which align vertial
 }
