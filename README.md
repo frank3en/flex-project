@@ -10,7 +10,12 @@ A flex box project.
 - [x] Overall Layout
 - [x] Header
 - [x] Navigation
-- [ ] Overview
+- [x] Overview
+- [ ] Description Section
+- [ ] User Review Section
+- [ ] CTA Section (stands for ?)
+- [ ] Media query
+- [ ] Deployment.
 
 ### Settings & Custom Properties
 
@@ -87,7 +92,14 @@ A flex box project.
 4. `margin:auto` with `flexbox` layout can occupy white space and avoid the size of element grow!
 5. For `svg` elements, they act like pure-text, there is space below them. change the `display` of their parent element, or change parent element `font-size:0`.
 6. Remember to group selector together with different names.
-7. `letter-spacing:size` is for letter space as the name descripted
+7. `letter-spacing:size` is for letter space as the name descripted.
+8. Setting `align-self:self` of a flex item to make element cross axis space occupies whole row.
+9. Setting `marin-bottom:-2px` to move its below element a bit close to it.
+10. To make `inline-button` component more modular, set its `font-size:inherit`, `background-color:transparent`.
+11. To make other colors follow event and avoid too many code in pseudo event, setting other color value to `currentColor`.
+12. Setting button `display:inline-block`.
+13. When does the pseudo event `:focus` triggered.
+14. Did `box-shadow` has a `none` value?
 
 ## Component List
 
@@ -96,6 +108,7 @@ A flex box project.
 - [x] Notification with number
 - [x] Side navigation layout
 - [x] Side navigation item with animation
+- [x] Button inline with infinite animation
 
 ## Docs
 
