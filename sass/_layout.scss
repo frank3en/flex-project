@@ -3,7 +3,7 @@
 .container {
   max-width: 120rem; // So the element can decrease.
   margin: 0 auto;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; // can increase.
 }
@@ -32,5 +32,4 @@
   flex: 1;
   // TEST REMOVE LATER
   height: 80rem;
-  background-color: #fff;
 }

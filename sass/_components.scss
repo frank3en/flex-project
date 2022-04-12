@@ -197,3 +197,65 @@
   color: var(--color-grey-light-4);
   text-align: center; // horizontal direction alignment vs. vertical align which align vertial
 }
+
+/***********
+ * GALLERY *
+ ***********/
+.gallery {
+  display: flex;
+
+  &__photo {
+    // In responsible design always assign a percentage of width / height of img element.
+    // So the image stays fluid.
+    width: 100%;
+    display: block; // the image always a block or inline-block if not want the wide space.
+  }
+}
+
+/************
+ * OVERVIEW *
+ ************/
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2);
+
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px; // @Rare
+    padding: 1.5rem;
+  }
+
+  &__stars {
+    // @I AM AMAZED!!!!!!!!!!!!!
+    // margin: auto;
+    margin-right: auto;
+    // @I AM AMAZED AGAIN!!!!!!!
+    // svg elements behave like inline elements,
+    // so it is a bit like text, they produce some more white space.
+    // to erase this, we can set svg element display block
+    // or:
+    display: flex;
+  }
+
+  &__icon-star, // remember to group selector together
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+  }
+
+  &__rating {
+  }
+
+  &__rating-average {
+  }
+
+  &__rating-count {
+  }
+}

@@ -1,6 +1,6 @@
 # flex-project
 
-A flex box project
+A flex box project.
 
 ## Demo of flexbox
 
@@ -49,7 +49,7 @@ A flex box project
 
 ---
 
-<!-- @TODO: review -->
+<!-- @TODO: to be reviewed -->
 
 6. Pseudo event `:focus` has a `outline`, which needs to be set to `none`;
 7. `justify-content: space-between` and set middle element `flex:0 0 40%` means it no grow no shrink and it has 40% of all width, the width can be used in its children elements as 100% of width.
@@ -78,6 +78,16 @@ A flex box project
 10. The `:active` pseudo event. When does it triggered and can it put on any element? Often triggered when mouse left click.
     > To style links appropriately, put the :active rule after all other link-related rules, as defined by the LVHA-order: :link — :visited — :hover — :active.
 11. **`currentColor`** is useful. gives the element color of its own or of its parent.
+
+### Hotel Overview
+
+1. Why add a `<figure>` over `<img>`, for a figure caption then what is a figure caption?
+2. In responsible web design, always remember to assign a percentage size(`width`,`height`) value of img, so that the image layout stays fluid.
+3. The `<img>` element need to be a `block` or `inline-block` if the **wide space** is not needed.
+4. `margin:auto` with `flexbox` layout can occupy white space and avoid the size of element grow!
+5. For `svg` elements, they act like pure-text, there is space below them. change the `display` of their parent element, or change parent element `font-size:0`.
+6. Remember to group selector together with different names.
+7. `letter-spacing:size` is for letter space as the name descripted
 
 ## Component List
 
