@@ -101,9 +101,16 @@ A flex box project.
 13. When does the pseudo event `:focus` triggered.
 14. Did `box-shadow` has a `none` value?
 
+
+### Description
+
+1. Keep parent box padding the same as between children's margin.
+2. pure css variable can be used by another variable.
+3. Use `<p>`, `<ul>`, `<li>` semantic elements.
+
 ## Component List
 
-- [ ] Header-nav-content layout
+- [x] Header-nav-content layout
 - [x] Input search
 - [x] Notification with number
 - [x] Side navigation layout
@@ -115,5 +122,15 @@ A flex box project.
 [1]. [https://sass-lang.com/documentation/at-rules/import](https://sass-lang.com/documentation/at-rules/import)
 
 [2]. [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
+
+## Errors
+
+1. `node-sass version 4.5.3` with node `version >=16`,install `npm i -D node-sass` with command-line syntax `node-sass [options] <input> [output]`.
+ 
+## Dev & Package TODO list
+
+- [ ] Update all developement dependencies.
+- [ ] Add a deps watcher.
+- [ ] Abstract the deps
 
 ## My customed own project associated with atelier
