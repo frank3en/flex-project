@@ -326,3 +326,61 @@
     box-shadow: none; // Did it have a none?
   }
 }
+
+/*************
+ * PARAGRAPH *
+ *************/
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+/********
+ * LIST *
+ ********/
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  padding: 3rem 0;
+
+  display: flex; // This we comes accross multi-line flexbox
+  flex-wrap: wrap;
+
+  // give each of them a fixed with
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem;
+    // below not working
+    // margin-right: auto;
+    // display: flex;
+  }
+
+  // use svg icon in css,
+  // and we don't use the sprites file, we use single svg icon
+  &__item::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.7rem;
+
+    // For older browsers
+    // later in a feature query to backwards compatible
+    // background-image: url("../img/chevron-thin-right.svg");
+    // background-size: cover; // fit in smaller size
+
+    // For newer browsers - masks
+    // look through the element, and see what behind the element.
+    // 1. set the background color of the element.
+    // 2. use the icon as a mask
+    // 3. then. we look through that mask
+    // 4. see the background color through the mask, and everything else is covered.
+    // it's a bit like clipping
+    background-color: var(--color-primary);
+    mask-image: url("../img/chevron-thin-right.svg");
+    -webkit-mask-image: url("../img/chevron-thin-right.svg");
+    mask-size: cover;
+    -webkit-mask-size: cover;
+  }
+}

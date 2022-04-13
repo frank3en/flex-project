@@ -107,6 +107,11 @@ A flex box project.
 1. Keep parent box padding the same as between children's margin.
 2. pure css variable can be used by another variable.
 3. Use `<p>`, `<ul>`, `<li>` semantic elements.
+4. `:last-of-type` and `:last-child`?
+5. How to use `flex-wrap:wrap` to align? with the help of `flex` to flex item to asign the size in their main axis.
+6. use `<svg>` in css is like other image with `background-image` and `background-size`.
+7. use new feature of `mask-image` to use svg. The anatomy of it is to set a mask and a background color, then we see bg color through the mask.
+8. we also need to set `mask-size`.
 
 ## Component List
 
