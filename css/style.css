@@ -294,6 +294,25 @@ body {
     mask-size: cover;
     -webkit-mask-size: cover; }
 
+/*************
+ * RECOMMEND *
+ *************/
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    height: 4rem;
+    width: 4rem;
+    border: 3px solid #fff;
+    box-sizing: content-box;
+    border-radius: 50%; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }
+
 .container {
   max-width: 120rem;
   margin: 0 auto;

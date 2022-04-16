@@ -11,7 +11,7 @@ A flex box project.
 - [x] Header
 - [x] Navigation
 - [x] Overview
-- [ ] Description Section
+- [x] Description Section
 - [ ] User Review Section
 - [ ] CTA Section (stands for ?)
 - [ ] Media query
@@ -112,6 +112,13 @@ A flex box project.
 6. use `<svg>` in css is like other image with `background-image` and `background-size`.
 7. use new feature of `mask-image` to use svg. The anatomy of it is to set a mask and a background color, then we see bg color through the mask.
 8. we also need to set `mask-size`.
+9. Set the `margin-right:auto` to two flex item in a flex row, which will get the effect of `justify-content:space-between`.
+10. In this project, only set `border width` value causes the img size shrink, set `box-sizing:content-box` to fix it.
+11. What is the diff between `:last-child` and `:last-of-type`?
+12. What does `border-radius:<percentage>` mean?
+
+
+### 
 
 ## Component List
 
@@ -121,6 +128,7 @@ A flex box project.
 - [x] Side navigation layout
 - [x] Side navigation item with animation
 - [x] Button inline with infinite animation
+- [x] Avatars overlap layout.
 
 ## Docs
 

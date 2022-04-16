@@ -384,3 +384,31 @@
     -webkit-mask-size: cover;
   }
 }
+
+/*************
+ * RECOMMEND *
+ *************/
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center;
+
+  &__count {
+     margin-right: auto;
+  }
+
+  &__photo {
+    height: 4rem;
+    width: 4rem;
+    border: 3px solid #fff; // only set this will get img size shrink.
+    box-sizing: content-box;
+    border-radius: 50%; // what does border-radius means?
+    // every item should have a negative margin so the next one can move left to overlap the breview
+    // except the last one
+    &:not(:last-child) {
+      // again what is the diff btw :last-of-type
+      margin-right: -1.5rem;
+    }
+  }
+}
