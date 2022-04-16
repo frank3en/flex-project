@@ -126,6 +126,15 @@ A flex box project.
 4. A html entity cheatsheet website:  https://css-tricks.com/snippets/html/glyphs/
 5. The `font-family:sans-serif` shows different in different OS.
 6. Setting `line-height:1` to erase extra height.
+7. How to create big question mark as background-color?
+
+
+### CTA 
+
+1. CTA is short for 'call for action'.
+2. The best way to hide an invisible element using `over-flow:hidden`;
+3. The difference with 2 different `padding` setting in `Button` component, which meant to handle two string with two different string.
+4. The pseudo event sequence: **LVHA-order**.
 
 ## Component List
 
@@ -135,7 +144,8 @@ A flex box project.
 - [x] Side navigation layout
 - [x] Side navigation item with animation
 - [x] Button inline with infinite animation
-- [x] Avatars overlap layout.
+- [x] Avatars overlap layout
+- [x] A main Button with 2 text on hover
 
 ## Docs
 

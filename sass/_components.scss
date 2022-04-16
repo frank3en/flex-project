@@ -301,13 +301,13 @@
 
   & span {
     margin-left: 3px;
-    transition: margin .2s;
+    transition: margin 0.2s;
   }
 
   &:hover {
     color: var(--color-grey-dark-1);
 
-    span{
+    span {
       margin-left: 8px;
     }
   }
@@ -482,10 +482,85 @@
     font-family: system-ui; // sans-serif will cause problem, and diff os system may have diff display effect.
     position: absolute;
     top: -2.2rem;
-    left: -.5rem;
+    left: -0.5rem;
     font-size: 20rem;
     color: var(--color-grey-light-2);
     line-height: 1; // ease some height error
     z-index: 1;
+  }
+}
+
+/******************
+ * CALL TO ACTION *
+ ******************/
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/**********
+ * BUTTON *
+ **********/
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  color: #fff;
+  overflow: hidden; // hide the invisible span, probably the best way of hiding.
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+    transform: translateY(0);
+  }
+
+  &__invisible {
+    padding: 2rem 0rem; // questions here??
+    position: absolute;
+    top: -100%;
+    left: 0;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
   }
 }
