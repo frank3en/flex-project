@@ -15,7 +15,7 @@
   "author": "frank shen",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^10.4.4",
     "concat": "^1.0.3",
     "live-server": "1.2.1",
     "node-sass": "^7.0.1",
