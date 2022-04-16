@@ -145,9 +145,7 @@
               <svg class="overview__icon-location">
                 <use xlink:href="img/sprite.svg#icon-location-pin"></use>
               </svg>
-              <button class="btn-inline">
-                Albufeira, Portugal
-              </button>
+              <button class="btn-inline">Albufeira, Portugal</button>
             </div>
 
             <div class="overview__rating">
@@ -158,10 +156,14 @@
           <div class="detail">
             <div class="description">
               <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
               </p>
               <p class="paragraph">
-                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
               </p>
               <ul class="list">
                 <li class="list__item">Close to the beach</li>
@@ -178,15 +180,70 @@
                   Lucy and 3 other friends recommend this hotel.
                 </p>
                 <div class="recommend__friends">
-                  <img src="img/user-1.jpg" alt="Friend 1" class="recommend__photo">
-                  <img src="img/user-2.jpg" alt="Friend 2" class="recommend__photo">
-                  <img src="img/user-3.jpg" alt="Friend 3" class="recommend__photo">
-                  <img src="img/user-5.jpg" alt="Friend 4" class="recommend__photo">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-2.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
                 </div>
               </div>
             </div>
             <div class="user-reviews">
-              User reviews
+              <!-- figures are not only for pics or imgs,but also are perfect for some text or descriptions for some image  -->
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="Reviewed User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Feb 22nd, 2022</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <!-- the big question mark can do in pure css -->
+                <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.</blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Reviewed User 2"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Sarah Stone</p>
+                    <p class="review__user-date">Apri 4th, 2022</p>
+                  </div>
+                  <div class="review__rating">8.1</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">
+                <!-- the extra span is for some effect -->
+                Show all <span>&rarr;</span>
+              </button>
             </div>
           </div>
         </main>

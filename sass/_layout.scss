@@ -11,7 +11,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom:var(--line);
+  border-bottom: var(--line);
 
   display: flex;
   justify-content: space-between;
@@ -35,24 +35,25 @@
 /**********
  * DETAIL *
  **********/
- .detail{
+.detail {
+  font-size: 1.4rem; // make all its children elements inherit the fontsize.
   display: flex;
   padding: 4.5rem; // Keep the same with below margin-right
   background-color: var(--color-grey-light-1);
-  border-bottom:var(--line);
- }
+  border-bottom: var(--line);
+}
 
- .description{
-   font-size: 1.4rem;
-   flex: 0 0 60%;
-   margin-right: 4.5rem;
-   box-shadow: var(--shadow-light);
-   padding: 3rem;
-   background-color:#fff;
- }
+.description { 
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  background-color: #fff;
+}
 
- .user-reviews{
-   flex: 1;
-   // TEST
-   background-color: royalblue;
- }
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

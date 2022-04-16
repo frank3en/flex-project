@@ -118,7 +118,14 @@ A flex box project.
 12. What does `border-radius:<percentage>` mean?
 
 
-### 
+### User Review / `flex box` review
+
+1. `<figure />` element is not only for pic/img but also for text/description for images.
+2. There is a `<blockquote>`, `<figcaption>` using inside of `<figure>` block.
+3. `z-index` always shows with a `position`.
+4. A html entity cheatsheet website:  https://css-tricks.com/snippets/html/glyphs/
+5. The `font-family:sans-serif` shows different in different OS.
+6. Setting `line-height:1` to erase extra height.
 
 ## Component List
 
