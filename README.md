@@ -1,6 +1,6 @@
 # flex-project
 
-A flex box project.
+[A flex box project.](https://frank3en.github.io/flex-project/)
 
 ## Demo of flexbox
 
