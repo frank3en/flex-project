@@ -14,8 +14,8 @@ A flex box project.
 - [x] Description Section
 - [x] User Review Section
 - [x] CTA Section (stands for call for action)
-- [ ] Media query
-- [ ] Deployment.
+- [x] Media query
+- [x] Deployment.
 
 ### Settings & Custom Properties
 
