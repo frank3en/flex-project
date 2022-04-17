@@ -5,7 +5,16 @@
   margin: 0 auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
-  min-height: 50rem; // can increase.
+  // min-height: 50rem; // can increase.
+
+  // the meaning of `only` and `and`?
+  // using desktop first strategy. so the media query is off with max-width.??
+  @media only screen and (max-width: $bp-large) {
+    // why use the unit in `em`
+    // in outer we change the font size
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .header {
   font-size: 1.4rem;
@@ -16,9 +25,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width:$bp-samllest){ // why use the unit in `em`
+    flex-wrap: wrap;
+    align-content: space-around;// control the rows element alignment in cross axis.
+    height: 11rem;
+  }
 }
 .content {
   display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -41,14 +60,33 @@
   padding: 4.5rem; // Keep the same with below margin-right
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+
+  // 当max-width的时候，排列要从大到小拍， BIG -> SMALL。 这样在应用到小尺寸的时候，相同的样式才会被覆盖成为小屏幕的样式
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }
 
-.description { 
+.description {
   flex: 0 0 60%;
   margin-right: 4.5rem;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   background-color: #fff;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {

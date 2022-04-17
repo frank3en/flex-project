@@ -16,6 +16,12 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-samllest) {
+    // why use the unit in `em`
+    order: 1;
+    flex: 0 0 100%;
+  }
+
   &__input {
     // the font famliy,font-size, color of input doesn't inherit
     font-family: inherit;
@@ -23,7 +29,7 @@
     color: inherit;
     background-color: var(--color-grey-light-2);
     border: none;
-    padding: 0.7rem 4rem 0.7rem 2rem;
+    padding: 0.7rem 3.5rem 0.7rem 2rem;
     border-radius: 100px;
     width: 90%;
     transition: all 0.2s;
@@ -38,6 +44,11 @@
       width: 100%;
       outline: none;
       background-color: var(--color-grey-light-3);
+
+      @media only screen and (max-width: $bp-samllest) {
+        // why use the unit in `em`
+        margin-left: -12px; // a myth? where does the space come from
+      }
     }
   }
 
@@ -113,6 +124,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      // why use the unit in `em`
+      height: 2rem;
+      width: 2rem;
+    }
   }
 
   // he separate nested element again
@@ -131,11 +148,25 @@
   list-style: none; // ul dot
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 0;
+    display: flex;
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        // media query 内不嵌套选择器，代码可读性会更好。
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
     }
   }
 
@@ -178,6 +209,15 @@
     position: relative;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
@@ -185,6 +225,12 @@
     width: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; // color of its element here or its parent's
+    @media only screen and (max-width: $bp-small) {
+      margin: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-bottom: 3px;
+    }
   }
 }
 
@@ -196,6 +242,10 @@
   padding: 2rem;
   color: var(--color-grey-light-4);
   text-align: center; // horizontal direction alignment vs. vertical align which align vertial
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 /***********
@@ -226,6 +276,11 @@
     text-transform: uppercase;
     letter-spacing: 1px; // @Rare
     padding: 1.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__stars {
@@ -267,17 +322,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -374,23 +441,28 @@
     height: 1rem;
     margin-right: 0.7rem;
 
-    // For older browsers
-    // later in a feature query to backwards compatible
-    // background-image: url("../img/chevron-thin-right.svg");
-    // background-size: cover; // fit in smaller size
+    //  //For older browsers
+    //  //later in a feature query to backwards compatible
+    background-image: url("../img/chevron-thin-right.svg");
+    background-size: cover; // fit in smaller size
 
-    // For newer browsers - masks
-    // look through the element, and see what behind the element.
-    // 1. set the background color of the element.
-    // 2. use the icon as a mask
-    // 3. then. we look through that mask
-    // 4. see the background color through the mask, and everything else is covered.
-    // it's a bit like clipping
-    background-color: var(--color-primary);
-    mask-image: url("../img/chevron-thin-right.svg");
-    -webkit-mask-image: url("../img/chevron-thin-right.svg");
-    mask-size: cover;
-    -webkit-mask-size: cover;
+    
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      // For newer browsers - masks
+      // look through the element, and see what behind the element.
+      // 1. set the background color of the element.
+      // 2. use the icon as a mask
+      // 3. then. we look through that mask
+      // 4. see the background color through the mask, and everything else is covered.
+      // it's a bit like clipping
+      background-color: var(--color-primary);
+      mask-image: url("../img/chevron-thin-right.svg");
+      -webkit-mask-image: url("../img/chevron-thin-right.svg");
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      // fix the background image
+      background-image: none;
+    }
   }
 }
 
@@ -405,6 +477,12 @@
 
   &__count {
     margin-right: auto;
+  }
+
+  &__friends {
+    // don't focus only on some certain component when you do media query,
+    // cause maybe there is a easy way of fixing the certain component without media query
+    display: flex;
   }
 
   &__photo {
@@ -433,6 +511,11 @@
   position: relative;
 
   overflow: hidden;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -496,6 +579,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+  }
 
   &__book-now {
     font-size: 1.2rem;

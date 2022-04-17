@@ -12,8 +12,8 @@ A flex box project.
 - [x] Navigation
 - [x] Overview
 - [x] Description Section
-- [ ] User Review Section
-- [ ] CTA Section (stands for ?)
+- [x] User Review Section
+- [x] CTA Section (stands for call for action)
 - [ ] Media query
 - [ ] Deployment.
 
@@ -136,6 +136,19 @@ A flex box project.
 3. The difference with 2 different `padding` setting in `Button` component, which meant to handle two string with two different string.
 4. The pseudo event sequence: **LVHA-order**.
 
+## About Responsive Design
+
+### Design
+
+1. How to set the breakpoints? To where the design start to break
+2. As a `browser-fisrt` project, when always use `max-width` for media query. And put the small size below the large size.
+3. Media query can't use css custom properties as variable? why?
+4. Use `media query` in each selector and pseudo event / element that will imporve the code readablity.
+5. The keyword of `@supports` and the usage of it.
+6. In `@supports`, we should solve the repeat style outside of it.
+7. **Stay focus on the whole page layout instead of just some certain elements**, sometimes you can fix these certain elements in other way rather than set specific break-points. In the project, like the `.recommend__photo`.
+8. The meanings of `only` and `and` in `media-query`.
+
 ## Component List
 
 - [x] Header-nav-content layout
@@ -159,8 +172,13 @@ A flex box project.
  
 ## Dev & Package TODO list
 
-- [ ] Update all developement dependencies.
+- [x] Update all developement dependencies.
 - [ ] Add a deps watcher.
 - [ ] Abstract the deps
+- [ ] Display some kind of user menu when hovering the username in `.user-nav`
+- [ ] Display a message when hovering over the chat icon in `.user-nav` (maybe like facebook)
+- [ ] Create a caption for the `.gallery__item` with a nice hover effect.
+- [ ] Display a box with search suggestions as soon as the user starts typing in the search field;
+- [ ] Make the page 100% responsive even for viewport sizes below 500px, maybe even responsive images.
 
 ## My customed own project associated with atelier

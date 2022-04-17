@@ -19,6 +19,19 @@
 
 }
 
+// media query can not use pure css variable. Can it now?
+// use sass variables.
+
+$bp-largest: 75em; // 1200px / 16px = 75
+$bp-large: 70em; // 1100px 
+$bp-medium:56.25em; // 900
+$bp-small:37.5em; // 600 , there is no obvious view crush, just wanna change the layout
+
+$bp-samllest:31.25em; // 500, for flex-box order property
+
+// 980
+
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +46,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px(target) /16px(browser default) -> 1rem = 10px;
+
+  @media only screen and (max-width:$bp-large){ // why use the unit in `em`
+    font-size: 50%;
+  }
 }
 
 body {
@@ -52,4 +69,8 @@ body {
   /* it will be removed, when its container gets larger OR -> set min-height */
   //   height: 100vh;
   min-height: 100vh;
+
+  @media only screen and (max-width:$bp-largest){ // why use the unit in `em`
+    padding: 0;
+  }
 }
