@@ -51,13 +51,8 @@
 3. Pseudo event of button `:focus` and `:active`.
 4. Minus margin and padding for icon place wihin `<input />`: `margin-right: -num`, `padding-right:num`;
 5. `input` and `button` can't get inherit `font-size`, `color`, `font-family` and other attributes, need to be manually set;
-
----
-
-<!-- @TODO: to be reviewed -->
-
 6. Pseudo event `:focus` has a `outline`, which needs to be set to `none`;
-7. `justify-content: space-between` and set middle element `flex:0 0 40%` means it no grow no shrink and it has 40% of all width, the width can be used in its children elements as 100% of width.
+7. `justify-content: space-between` and set middle element `flex:0 0 40%` means it no grow no shrink and it has 40% of all width, **the width can be used in its children elements as 100% of width.**
 8. Set `font-size` in `_layout.scss` for inner components to inherit.
 
 ### Header Part3
@@ -65,9 +60,10 @@
 1. For layout symmetric we need to modify some early settings: `logo margin-left`.
 2. `align-self:stretch` to let the certain element occupy the whole row size of flex cross axis, which is very helpful for the **pseudo event** like `:hover`,...
 3. Direct children element selector `>`.
-4. Setting `svg` element's color: `fill:{some rbag/}`,
-5. Why setting `border-raidus` a very high value? differ from `50%`.
-6. Why only set the height of the `<img />` element, is it because of the origin size is square or the stardard force the height and width to be equal, or is for the `border-raidus` let it be a square-like.
+4. Why setting `border-raidus` a very high value? differ from `50%`.
+5. Why only set the height of the `<img />` element, is it because of the origin size is square or the stardard force the height and width to be equal, or is for the `border-raidus` let it be a square-like.
+
+<!-- to be reviewed -->
 
 ### Nav Part
 
@@ -101,7 +97,6 @@
 13. When does the pseudo event `:focus` triggered.
 14. Did `box-shadow` has a `none` value?
 
-
 ### Description
 
 1. Keep parent box padding the same as between children's margin.
@@ -117,19 +112,17 @@
 11. What is the diff between `:last-child` and `:last-of-type`?
 12. What does `border-radius:<percentage>` mean?
 
-
 ### User Review / `flex box` review
 
 1. `<figure />` element is not only for pic/img but also for text/description for images.
 2. There is a `<blockquote>`, `<figcaption>` using inside of `<figure>` block.
 3. `z-index` always shows with a `position`.
-4. A html entity cheatsheet website:  https://css-tricks.com/snippets/html/glyphs/
+4. A html entity cheatsheet website: https://css-tricks.com/snippets/html/glyphs/
 5. The `font-family:sans-serif` shows different in different OS.
 6. Setting `line-height:1` to erase extra height.
 7. How to create big question mark as background-color?
 
-
-### CTA 
+### CTA
 
 1. CTA is short for 'call for action'.
 2. The best way to hide an invisible element using `over-flow:hidden`;
@@ -169,7 +162,7 @@
 ## Errors
 
 1. `node-sass version 4.5.3` with node `version >=16`,install `npm i -D node-sass` with command-line syntax `node-sass [options] <input> [output]`.
- 
+
 ## Dev & Package TODO list
 
 - [x] Update all developement dependencies.
